@@ -217,7 +217,6 @@ socket.on("userMessage", (msg) => {
   }
 
   socket.emit("botReply", reply);
-  console.log("Bot Reply:", reply);
 });
 
   
