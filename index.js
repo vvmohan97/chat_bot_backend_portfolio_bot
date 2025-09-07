@@ -177,8 +177,8 @@ socket.on("userMessage", (msg) => {
     reply = {
       type: "text",
       message: randomPick([
-        "📧 vvmohan.vsr@gmail.com \n📞 +91-9524244117",
-        "Here’s my contact info: vvmohan.vsr@gmail.com & 📞 +91-9524244117",
+        "📧 vvmohan.vsr@gmail.com \n📱 +91-9524244117",
+        "Here’s my contact info: vvmohan.vsr@gmail.com & 📱 +91-9524244117",
       ]),
     };
   } else if (["email"].some((word) => cleanedMsg.includes(word))) {
@@ -186,7 +186,7 @@ socket.on("userMessage", (msg) => {
   } else if (
     ["number", "mobile", "phone"].some((word) => cleanedMsg.includes(word))
   ) {
-    reply = { type: "text", message: "📞 +91-9524244117" };
+    reply = { type: "text", message: "📱 +91-9524244117" };
   }
 
   // --- SOCIAL LINKS ---
@@ -252,7 +252,7 @@ socket.on("userMessage", (msg) => {
   //     cleanedMsg.includes("mobile") ||
   //     cleanedMsg.includes("phone")
   //   ) {
-  //     reply = { type: "text", message: "📞 +91-9524244117" };
+  //     reply = { type: "text", message: "📱 +91-9524244117" };
   //   } else if (cleanedMsg.includes("instagram")) {
   //     reply = {
   //       type: "link",
